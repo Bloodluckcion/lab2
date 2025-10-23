@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог-портфолио | Семантическая верстка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">🚀 Мой Блог</h1>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#top">Главная</a></li>
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="#projects">Проекты</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="layout-grid">
+                <section class="content" id="home">
+                    <article class="article-card">
+                        <header class="article-header">
+                            <h2>🎯 Мой путь в веб-разработке</h2>
+                            <time datetime="2024-03-15">16 октября 2025</time>
+                        </header>
+                        <div class="article-content">
+                            <p>Привет! Я начинающий веб-разработчик, и этот блог - мой дневник обучения. Здесь я делюсь своими успехами, трудностями и интересными находками в мире фронтенда.</p>
+                            <p>Недавно освоил семантическую верстку и адаптивный дизайн. Оказывается, правильно структурированный HTML - это не только для браузеров, но и для доступности!</p>
+                        </div>
+                        <footer class="article-footer">
+                            <span class="tags">#вебразработка #обучение #HTML</span>
+                        </footer>
+                    </article>
+
+                    <article class="article-card">
+                        <header class="article-header">
+                            <h2>💡 Почему я выбрал Frontend</h2>
+                            <time datetime="2024-03-10">9 октября 2025</time>
+                        </header>
+                        <div class="article-content">
+                            <p>Frontend разработка - это искусство создавать интерфейсы, которые нравятся пользователям. Мне нравится видеть мгновенный результат своей работы и то, как код превращается в красивые и функциональные интерфейсы.</p>
+                            <p>Особенно вдохновляет возможность создавать адаптивные сайты, которые одинаково хорошо выглядят на любом устройстве - от смартфона до desktop-монитора.</p>
+                        </div>
+                        <footer class="article-footer">
+                            <span class="tags">#frontend #карьера #мотивация</span>
+                        </footer>
+                    </article>
+                </section>
+
+                <aside class="sidebar">
+                    <section class="about-card" id="about">
+                        <h3>👨‍💻 Обо мне</h3>
+                        <div class="about-content">
+                            <img src="avatar.jpg" alt="Мое фото" class="about-photo">
+                            <p>Студент, увлекаюсь веб-разработкой. Люблю создавать современные и удобные интерфейсы.</p>
+                        </div>
+                    </section>
+
+                    <section class="projects-card" id="projects">
+                        <h3>📂 Мои проекты</h3>
+                        <ul class="projects-list">
+                            <li>🎮 MMORPG Game (в разработке)</li>
+                            <li>📱 Своя игра (Аналог телепередачи)</li>
+                            <li>🎮 2D Survival Game</li>
+                            <li>📊 Калькулятор ипотеки</li>
+                        </ul>
+                    </section>
+
+                    <section class="skills-card">
+                        <h3>🛠️ Технологии</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">VS Code</span>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>📞 Контакты</h4>
+                    <p>Номер: +37377988538</p>
+                    <p>Email: bogsocol@gmail.com</p>
+                    <p>Телеграм: @Bloodluckcion</p>
+                </div>
+                <div class="footer-section">
+                    <h4>🌐 Соцсети</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/Bloodluckcion" target="_blank">GitHub</a>
+                        <a href="https://t.me/Bloodluckcion" target="_blank">Telegram</a>
+                        <a href="https://vk.com/bloodluckcion" target="_blank">VK</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>📍 Местоположение</h4>
+                    <p>Тирасполь, ПМР</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 | Мой Блог-Портфолио | Студент ПГУ ФТИ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
